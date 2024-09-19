@@ -34,7 +34,10 @@
 		"format": "prettier nodes credentials --write",
 		"lint": "eslint nodes credentials package.json",
 		"lintfix": "eslint nodes credentials package.json --fix",
-		"prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
+		"prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json",
+		"publish-patch": "npm version patch && pnpm publish",
+		"publish-minor": "npm version minor && pnpm publish",
+		"publish-major": "npm version major && pnpm publish"
 	},
 	"files": [
 		"dist"

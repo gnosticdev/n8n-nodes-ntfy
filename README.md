@@ -1,6 +1,8 @@
-# n8n-nodes-ntfy
+# ntfy.sh Node for n8n
 
 This is an n8n community node for [ntfy](https://ntfy.sh/).
+
+Yea so I made this without checking the community repo first, and theres already a couple of these... Anyway.
 
 Ntfy is a simple notification service that lets you send messages to your phone, email, or other devices. It's a great way to get notifications from your scripts, cron jobs, or any other program.
 
