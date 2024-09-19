@@ -6,7 +6,7 @@
 		"n8n-community-node-package"
 	],
 	"license": "MIT",
-	"homepage": "",
+	"homepage": "https://github.com/gnosticdev/n8n-nodes-ntfy",
 	"author": {
 		"name": "gnosticdev",
 		"email": "gnosticdev@users.noreply.github.com"
