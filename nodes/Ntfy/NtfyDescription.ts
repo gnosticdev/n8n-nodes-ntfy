@@ -119,7 +119,7 @@ export const ntfyFields: INodeProperties[] = [
 								name: 'clear',
 								type: 'boolean',
 								default: false,
-								description: 'Clear the notification after the action is tapped',
+								description: 'Whether to clear the notification after the action is tapped',
 							},
 							{
 								displayName: 'Method',
