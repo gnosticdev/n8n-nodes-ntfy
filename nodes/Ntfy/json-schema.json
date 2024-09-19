@@ -1,0 +1,117 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "actions": {
+            "description": "Custom user action buttons for notifications",
+            "items": {
+                "properties": {
+                    "action": {
+                        "enum": [
+                            "view",
+                            "broadcast",
+                            "http"
+                        ],
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "clear": {
+                        "type": "boolean"
+                    },
+                    "headers": {
+                        "type": "object"
+                    },
+                    "label": {
+                        "type": "string"
+                    },
+                    "method": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "action",
+                    "label"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "attach": {
+            "description": "URL of an attachment, see attach via URL",
+            "format": "uri",
+            "type": "string"
+        },
+        "call": {
+            "description": "Phone number to use for voice call",
+            "type": [
+                "string",
+                "boolean"
+            ]
+        },
+        "click": {
+            "description": "Website opened when notification is clicked",
+            "format": "uri",
+            "type": "string"
+        },
+        "delay": {
+            "description": "Timestamp or duration for delayed delivery",
+            "type": "string"
+        },
+        "email": {
+            "description": "E-mail address for e-mail notifications",
+            "format": "email",
+            "type": "string"
+        },
+        "filename": {
+            "description": "File name of the attachment",
+            "type": "string"
+        },
+        "icon": {
+            "description": "URL to use as notification icon",
+            "format": "uri",
+            "type": "string"
+        },
+        "markdown": {
+            "description": "Set to true if the message is Markdown-formatted",
+            "type": "boolean"
+        },
+        "message": {
+            "description": "Message body; set to triggered if empty or not passed",
+            "type": "string"
+        },
+        "priority": {
+            "description": "Message priority with 1=min, 3=default and 5=max",
+            "enum": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "type": "integer"
+        },
+        "tags": {
+            "description": "List of tags that may or not map to emojis",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "title": {
+            "description": "Message title",
+            "type": "string"
+        },
+        "topic": {
+            "description": "Target topic name",
+            "type": "string"
+        }
+    },
+    "required": [
+        "topic"
+    ],
+    "type": "object"
+}
