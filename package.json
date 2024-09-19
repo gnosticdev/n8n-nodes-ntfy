@@ -1,15 +1,21 @@
 {
-	"name": "n8n-nodes-ntfy",
+	"name": "@gnosticdev/n8n-nodes-ntfy",
 	"version": "0.1.0",
 	"description": "Use ntfy.sh to send push notifications to your iPhone, Android, Browser, etc.",
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package",
+		"ntfy",
+		"webhook",
+		"notifications",
+		"push",
+		"alerts",
+		"messages"
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/gnosticdev/n8n-nodes-ntfy",
 	"author": {
 		"name": "gnosticdev",
-		"email": "gnosticdev@users.noreply.github.com"
+		"url": "https://github.com/gnosticdev"
 	},
 	"repository": {
 		"type": "git",
